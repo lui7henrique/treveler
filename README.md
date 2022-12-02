@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Traveler
 
 ## Getting Started
 
@@ -12,23 +12,53 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+# Dashboard features
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Login
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+> [Figma frame](https://www.figma.com/file/yKc27plkpgJtEkBcW3DRWa/Traveler---Dashboard?node-id=680%3A6551&t=YoLoxoW4BBMoumK0-0)
 
-## Learn More
+| Title            | Description                                                                                          | Issue | Status  |
+| ---------------- | ---------------------------------------------------------------------------------------------------- | ----- | ------- |
+| Layout           | Login desktop page layout                                                                            | ?     | Pending |
+| Layout           | Login mobile page layout                                                                             | ?     | Pending |
+| Form             | Login page form                                                                                      | ?     | Pending |
+| Form integration | Login page form integration: post on endpoint and recover user data                                  | ?     | Pending |
+| Auth context     | Create auth context and ensure that authentic pages are only accessed when the user is authenticated | ?     | Pending |
 
-To learn more about Next.js, take a look at the following resources:
+## Home
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+> [Figma frame](https://www.figma.com/file/yKc27plkpgJtEkBcW3DRWa/Traveler---Dashboard?node-id=680%3A6614&t=YoLoxoW4BBMoumK0-0)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+| Title             | Description                                            | Issue | Status  |
+| ----------------- | ------------------------------------------------------ | ----- | ------- |
+| Layout            | Develop default layout of private pages                | ?     | Pending |
+| List of cities    | Develop list of cities                                 | ?     | Pending |
+| List item of city | Develop list item of city w/ actions (edit and delete) | ?     | Pending |
 
-## Deploy on Vercel
+## City profile
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Add new city form
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Edit city form
+
+## Edit place form
+
+## Delete city/form
+
+## Comments
+
+> [Figma frame](https://www.figma.com/file/yKc27plkpgJtEkBcW3DRWa/Traveler---Dashboard?node-id=680%3A7799&t=YoLoxoW4BBMoumK0-0)
+
+| Title                             | Description                                                                                     | Issue | Status  |
+| --------------------------------- | ----------------------------------------------------------------------------------------------- | ----- | ------- |
+| List of comments                  | List of comments about registered places, is changed by all; recent; old; accepted and declined | ?     | Pending |
+| List item of comment              | List item of comment w/ profile image, name, status, category, city, and place                  | ?     | Pending |
+| Modal w/ comments details         | Details of comment details w/ note, profile image, name, status, category, city, and place      | ?     | Pending |
+| Modal footer actions              | Decline or approve comment                                                                      | ?     | Pending |
+| Modal header approved actions     | Delete already approved comment                                                                 | ?     | Pending |
+| Comment delete confirmation modal | Comment deletion confirmation modal with option to delete or cancel operation                   | ?     | Pending |
+
+# 🪐 Website features
+
+---
