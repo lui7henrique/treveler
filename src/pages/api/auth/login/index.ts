@@ -5,8 +5,11 @@ import prisma from "lib/prisma";
 import { isValidEmail } from "utils/email/valid";
 import { hash } from "utils/password/hash";
 
+import { encode } from "utils/token";
+
 type ResponseData = {
-  message: string;
+  message?: string;
+  token?: string;
 };
 
 export default async function handler(
@@ -49,7 +52,9 @@ export default async function handler(
       const isMatchPasswords = passwordHash === hash(password);
 
       if (isMatchPasswords) {
-        return res.status(200).json({ message: "ok dog" });
+        const token = encode(user);
+
+        return res.status(200).json({ token });
       }
     }
 
