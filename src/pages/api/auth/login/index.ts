@@ -1,5 +1,4 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { Prisma } from "@prisma/client";
 
 import prisma from "lib/prisma";
 
@@ -19,15 +18,15 @@ export default async function handler(
   }
 
   const { body } = req;
-  const { name, email, password } = body;
+  const { email, password } = body;
 
-  const [hasName, hasEmail, hasPassword] = [!!name, !!email, !!password];
-  const hasParams = hasName && hasEmail && hasPassword;
+  const [hasEmail, hasPassword] = [!!email, !!password];
+  const hasParams = hasEmail && hasPassword;
 
   if (!hasParams) {
     return res
       .status(406)
-      .json({ message: "Payload must be have name, e-mail and password." });
+      .json({ message: "Payload must be have e-mail and password." });
   }
 
   const isEmailValid = isValidEmail(email);
@@ -39,22 +38,23 @@ export default async function handler(
   }
 
   try {
-    const user = await prisma.user.create({
-      data: {
-        name,
-        email,
-        password: hash(password),
+    const user = await prisma.user.findUnique({
+      where: {
+        email: email,
       },
     });
 
-    return res.status(201).json({ message: "User created succesfully" });
-  } catch (err) {
-    if (err instanceof Prisma.PrismaClientKnownRequestError) {
-      if (err.code === "P2002") {
-        return res.status(403).json({ message: "E-mail already exists." });
+    if (user) {
+      const { password: passwordHash } = user;
+      const isMatchPasswords = passwordHash === hash(password);
+
+      if (isMatchPasswords) {
+        return res.status(200).json({ message: "ok dog" });
       }
     }
 
+    return res.status(401).json({ message: "Invalid email or password." });
+  } catch (err) {
     return res.status(500).json({ message: "Internal server error :(" });
   }
 }
