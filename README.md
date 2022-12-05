@@ -69,7 +69,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 | Title                  | Description                                                                                                                                                                                                                    | Issue | Status  |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----- | ------- |
 | Reuse default layout   | [Reuse default layout and adapt according to needs (additional actions in header: title, and steps) ](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A7213&t=zbEecCj0D7KqxpJN-0>) | ?     | Pending |
-| Setup edit city fields | [Setup edit city fields: name: image and description](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A7251&t=zbEecCj0D7KqxpJN-0>>)                                                | ?     | Pending |
+| Setup edit city fields | [Setup edit city fields: name: image and description](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A7251&t=zbEecCj0D7KqxpJN-0>)                                                 | ?     | Pending |
 | Success screen         | [Success page](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A7112&t=zbEecCj0D7KqxpJN-0>)                                                                                        | ?     | Pending |
 
 ## Edit place form
@@ -94,14 +94,15 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 > [Figma frame](https://www.figma.com/file/yKc27plkpgJtEkBcW3DRWa/Traveler---Dashboard?node-id=680%3A7799&t=YoLoxoW4BBMoumK0-0)
 
-| Title                             | Description                                                                                     | Issue | Status  |
-| --------------------------------- | ----------------------------------------------------------------------------------------------- | ----- | ------- |
-| List of comments                  | List of comments about registered places, is changed by all; recent; old; accepted and declined | ?     | Pending |
-| List item of comment              | List item of comment w/ profile image, name, status, category, city, and place                  | ?     | Pending |
-| Modal w/ comments details         | Details of comment details w/ note, profile image, name, status, category, city, and place      | ?     | Pending |
-| Modal footer actions              | Decline or approve comment                                                                      | ?     | Pending |
-| Modal header approved actions     | Delete already approved comment                                                                 | ?     | Pending |
-| Comment delete confirmation modal | Comment deletion confirmation modal with option to delete or cancel operation                   | ?     | Pending |
+| Title                             | Description                                                                                                                                                                                                                | Issue | Status  |
+| --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ------- |
+| List of comments                  | [List of comments about registered places, is changed by all; recent; old; accepted and declined](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A7799&t=zbEecCj0D7KqxpJN-0>) | ?     | Pending |
+| List item of comment              | [List item of comment w/ profile image, name, status, category, city, and place](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A7799&t=zbEecCj0D7KqxpJN-0>)                  | ?     | Pending |
+| Modal w/ comments details         | [Details of comment details w/ note, profile image, name, status, category, city, and place](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A7909&t=zbEecCj0D7KqxpJN-0>)      | ?     | Pending |
+| Modal footer actions              | [Decline or approve comment](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A7909&t=zbEecCj0D7KqxpJN-0>)                                                                      | ?     | Pending |
+| Modal header approved actions     | [Delete already approved comment](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A7974&t=zbEecCj0D7KqxpJN-0>)                                                                 | ?     | Pending |
+| Modal actions feedback            | [If the comment was accepted or rejected](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A6449&t=zbEecCj0D7KqxpJN-0>)                                                         | ?     | Pending |
+| Comment delete confirmation modal | [Comment deletion confirmation modal with option to delete or cancel operation](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A7183&t=zbEecCj0D7KqxpJN-0>)                   | ?     | Pending |
 
 # 🪐 Website features
 
