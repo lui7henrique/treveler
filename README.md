@@ -64,9 +64,31 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Edit city form
 
+> [Figma frame](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A7251&t=zbEecCj0D7KqxpJN-0>)
+
+| Title                  | Description                                                                                                                                                                                                                    | Issue | Status  |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----- | ------- |
+| Reuse default layout   | [Reuse default layout and adapt according to needs (additional actions in header: title, and steps) ](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A7213&t=zbEecCj0D7KqxpJN-0>) | ?     | Pending |
+| Setup edit city fields | [Setup edit city fields: name: image and description](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A7251&t=zbEecCj0D7KqxpJN-0>>)                                                | ?     | Pending |
+| Success screen         | [Success page](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A7112&t=zbEecCj0D7KqxpJN-0>)                                                                                        | ?     | Pending |
+
 ## Edit place form
 
-## Delete city/form
+> [Figma frame](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A7636&t=zbEecCj0D7KqxpJN-0>)
+
+| Title                   | Description                                                                                                                                                                                                                    | Issue | Status  |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----- | ------- |
+| Reuse default layout    | [Reuse default layout and adapt according to needs (additional actions in header: title, and steps) ](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A7213&t=zbEecCj0D7KqxpJN-0>) | ?     | Pending |
+| Setup edit place fields | [Setup edit place fields: name, image, description, category, opening hours, address](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A7636&t=zbEecCj0D7KqxpJN-0>)                 | ?     | Pending |
+| Success screen          | [Success page](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A6907&t=zbEecCj0D7KqxpJN-0>)                                                                                        | ?     | Pending |
+
+## Delete city/place
+
+> [Figma frame](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A7168&t=zbEecCj0D7KqxpJN-0>)
+
+| Title                             | Description                                                                                                                                                                                                    | Issue | Status  |
+| --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ------- |
+| Development of reusable component | [Development of reusable component for all use cases (delete of city, place, etc.)) ](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A7168&t=zbEecCj0D7KqxpJN-0>) | ?     | Pending |
 
 ## Comments
 
@@ -83,4 +105,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 # 🪐 Website features
 
----
+¯\_(ツ)\_/¯
