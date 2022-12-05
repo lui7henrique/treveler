@@ -28,6 +28,7 @@ model User {
   password  String?
   createdAt DateTime @default(now()) @map(name: "created_at")
   updatedAt DateTime @updatedAt @map(name: "updated_at")
+  isAdmin   Boolean  @default(false)
 
   @@map(name: "users")
 }

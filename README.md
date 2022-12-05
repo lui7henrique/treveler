@@ -18,27 +18,49 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 > [Figma frame](https://www.figma.com/file/yKc27plkpgJtEkBcW3DRWa/Traveler---Dashboard?node-id=680%3A6551&t=YoLoxoW4BBMoumK0-0)
 
-| Title            | Description                                                                                          | Issue | Status  |
-| ---------------- | ---------------------------------------------------------------------------------------------------- | ----- | ------- |
-| Layout           | Login desktop page layout                                                                            | ?     | Pending |
-| Layout           | Login mobile page layout                                                                             | ?     | Pending |
-| Form             | Login page form                                                                                      | ?     | Pending |
-| Form integration | Login page form integration: post on endpoint and recover user data                                  | ?     | Pending |
-| Auth context     | Create auth context and ensure that authentic pages are only accessed when the user is authenticated | ?     | Pending |
+| Title            | Description                                                                                                                                          | Issue | Status  |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ------- |
+| Layout           | [Login desktop page layout](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A6551&t=zbEecCj0D7KqxpJN-0>) | ?     | Pending |
+| Layout           | Login mobile page layout                                                                                                                             | ?     | Pending |
+| Form             | [Login page form](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A6551&t=zbEecCj0D7KqxpJN-0>)           | ?     | Pending |
+| Form integration | Login page form integration: post on endpoint and recover user data                                                                                  | ?     | Pending |
+| Auth context     | Create auth context and ensure that authentic pages are only accessed when the user is authenticated                                                 | ?     | Pending |
 
 ## Home
 
 > [Figma frame](https://www.figma.com/file/yKc27plkpgJtEkBcW3DRWa/Traveler---Dashboard?node-id=680%3A6614&t=YoLoxoW4BBMoumK0-0)
 
-| Title             | Description                                            | Issue | Status  |
-| ----------------- | ------------------------------------------------------ | ----- | ------- |
-| Layout            | Develop default layout of private pages                | ?     | Pending |
-| List of cities    | Develop list of cities                                 | ?     | Pending |
-| List item of city | Develop list item of city w/ actions (edit and delete) | ?     | Pending |
+| Title             | Description                                                                                                                                                                       | Issue | Status  |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ------- |
+| Layout            | [Develop default layout of private pages](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A6614&t=zbEecCj0D7KqxpJN-0>)                | ?     | Pending |
+| List of cities    | [Develop list of cities](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A6614&t=zbEecCj0D7KqxpJN-0>)                                 | ?     | Pending |
+| List item of city | [Develop list item of city w/ actions (edit and delete)](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A6614&t=zbEecCj0D7KqxpJN-0>) | ?     | Pending |
 
 ## City profile
 
+| Title                | Description                                                                                                                                                                                                                                                                      | Issue | Status  |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ------- |
+| Reuse default layout | [Reuse default layout and adapt according to needs (additional actions in header: edit, delete and add location)](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A6688&t=zbEecCj0D7KqxpJN-0>)                                       | ?     | Pending |
+| Case of a new city   | [Take care in development with the layout of new cities without some elements](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A6793&t=zbEecCj0D7KqxpJN-0>)                                                                          | ?     | Pending |
+| Hero section         | [Development of hero section of city profile w/ banner of city, section w/ city informations (name, description, subdescription), and resume of places](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A6688&t=zbEecCj0D7KqxpJN-0>) | ?     | Pending |
+| Most rated section   | [Development of most rated places (title, and advanced places card)](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A6688&t=zbEecCj0D7KqxpJN-0>)                                                                                    | ?     | Pending |
+| Highlight section    | [Development of highlight place section](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A6688&t=zbEecCj0D7KqxpJN-0>)                                                                                                                | ?     | Pending |
+| Knows all places     | [Development of knows all places section (title, places categories tabs and advanced card list)](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A6688&t=zbEecCj0D7KqxpJN-0>)                                                        | ?     | Pending |
+
+## Place profile
+
+| Title                | Description                                                                                                                                                                                                                                | Issue | Status  |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----- | ------- |
+| Reuse default layout | [Reuse default layout and adapt according to needs (additional actions in header: edit, delete and add location)](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A6688&t=zbEecCj0D7KqxpJN-0>) | ?     | Pending |
+
 ## Add new city form
+
+| Title                          | Description                                                                                                                                                                                                                    | Issue | Status  |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----- | ------- |
+| Reuse default layout           | [Reuse default layout and adapt according to needs (additional actions in header: title, and steps) ](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A7213&t=zbEecCj0D7KqxpJN-0>) | ?     | Pending |
+| Setup first step form fields   | [Setup add new city form w/ fields: city name, image, description](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A7213&t=zbEecCj0D7KqxpJN-0>)                                    | ?     | Pending |
+| Setup seconds step form fields | [Setup add new place form w fields: place name, image, descript, category, and address](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A7296&t=zbEecCj0D7KqxpJN-0>)               | ?     | Pending |
+| Success screen                 | [Developoment of success page w/ success message and city and places](<https://www.figma.com/file/3vd86OrCIGyZvJ7R5eSXIN/Traveler---Dashboard-(Copy)?node-id=680%3A6859&t=zbEecCj0D7KqxpJN-0>)                                 | ?     | Pending |
 
 ## Edit city form
 
