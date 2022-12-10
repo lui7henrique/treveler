@@ -1,5 +1,14 @@
 # Traveler
 
+# Tecnologies
+
+> This project was developed using cutting edge technologies.
+
+- [ ] [React](https://beta.reactjs.org/)
+- [ ] [Typescript](https://www.typescriptlang.org/)
+- [ ] [Next.js](https://nextjs.org/)
+- [ ] [Prisma](https://www.prisma.io/)
+
 ## Getting Started
 
 First, run the development server:
