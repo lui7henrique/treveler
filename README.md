@@ -1,6 +1,6 @@
 # Traveler
 
-# Tecnologies
+## Tecnologies
 
 > This project was developed using cutting edge technologies.
 
