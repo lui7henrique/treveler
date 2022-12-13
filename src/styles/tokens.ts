@@ -119,8 +119,6 @@ export const media = {
 */
 
 export const colors = {
-  brand: {
-    blue: "#115D8C",
-    orange: "#F25D27",
-  },
+  brandBlue: "#115D8C",
+  brandOrange: "#F25D27",
 };
