@@ -4,14 +4,15 @@ export const Container = styled("div", {
   variants: {
     style: {
       primary: {
-        background: "$shape",
         color: "$subtext",
-        height: "$16",
       },
       secondary: {
         background: "$subShape",
         color: "$title",
-        height: "$16",
+      },
+      error: {
+        borderColor: "$red",
+        color: "$subtext",
       },
     },
   },
@@ -23,6 +24,8 @@ export const Container = styled("div", {
   alignItems: "center",
 
   padding: "0 $6",
+  height: "$16",
+  background: "$shape",
 
   borderWidth: "1px",
   borderStyle: "solid",
@@ -31,6 +34,8 @@ export const Container = styled("div", {
   borderRadius: "$md",
 
   position: "relative",
+
+  transition: "all 0.2s ease-in-out",
 });
 
 export const Input = styled("input", {

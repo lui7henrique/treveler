@@ -6,6 +6,7 @@ type ButtonProps = typeof S.Button.defaultProps & {
 
 export const Button = (props: ButtonProps) => {
   const { children, ...buttonProps } = props;
+  console.log({ buttonProps });
 
   return <S.Button {...buttonProps}>{children}</S.Button>;
 };
