@@ -31,7 +31,6 @@ const BaseFieldText: ForwardRefRenderFunction<
       </S.Label>
 
       <S.Input
-        type="text"
         onFocus={() => !isTyping && setIsTyping(true)}
         {...inputProps}
         onBlur={({ target: { value } }) =>

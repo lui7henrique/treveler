@@ -1,10 +1,16 @@
+import { useCallback, useState } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
+
+import { FieldPassword } from "components/FieldPassword";
 import { Button } from "components/Button";
 import { FieldText } from "components/FieldText";
-import { useCallback, useRef, useState } from "react";
-import { FiEyeOff, FiEye } from "react-icons/fi";
 
-import { useForm } from "react-hook-form";
-import { FieldPassword } from "components/FieldPassword";
+export const loginSchema = z.object({
+  email: z.string().email("E-mail é um campo obrigatório."),
+  password: z.string().min(6, "Senha é um campo obrigatório."),
+});
 
 type LoginForm = {
   email: string;
@@ -16,11 +22,19 @@ export default function Login() {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<LoginForm>();
+  } = useForm<LoginForm>({
+    resolver: zodResolver(loginSchema),
+  });
 
-  const onSubmit = useCallback((data: LoginForm) => {
+  const [emailError, setEmailError] = useState<null | string>(null);
+
+  const onSubmit = useCallback(async (data: LoginForm) => {
     const { email, password } = data;
+
+    console.log({ data });
   }, []);
+
+  console.log({ errors });
 
   return (
     <div
@@ -34,7 +48,14 @@ export default function Login() {
       }}
     >
       <form onSubmit={handleSubmit(onSubmit)} style={{ width: "416px" }}>
-        <FieldText {...register("email")} error={errors.email} label="E-mail" />
+        <FieldText
+          {...register("email")}
+          error={errors.email}
+          label="E-mail"
+          // type="email"
+        />
+
+        <p>{emailError}</p>
 
         <FieldPassword
           {...register("password")}
