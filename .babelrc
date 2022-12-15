@@ -2,15 +2,7 @@
   "presets": ["next/babel"],
   "env": {
     "test": {
-      "plugins": [
-        "@babel/plugin-transform-modules-commonjs",
-        [
-          "module-resolver",
-          {
-            "root": ["./src"]
-          }
-        ]
-      ]
+      "plugins": ["@babel/plugin-transform-modules-commonjs"]
     }
   }
 }
