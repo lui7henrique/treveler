@@ -1,11 +1,9 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-import prisma from "lib/prisma";
-
-import { isValidEmail } from "utils/email/valid";
-import { hash } from "utils/password/hash";
-
-import { encode } from "utils/token";
+import prisma from "../../../../lib/prisma";
+import { isValidEmail } from "../../../../utils/email/valid";
+import { hash } from "../../../../utils/password/hash";
+import { encode } from "../../../../utils/token";
 
 type ResponseData = {
   message?: string;

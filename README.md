@@ -4,10 +4,13 @@
 
 > This project was developed using cutting edge technologies.
 
-- [ ] [React](https://beta.reactjs.org/)
-- [ ] [Typescript](https://www.typescriptlang.org/)
-- [ ] [Next.js](https://nextjs.org/)
-- [ ] [Prisma](https://www.prisma.io/)
+- [x] [React](https://beta.reactjs.org/)
+- [x] [Typescript](https://www.typescriptlang.org/)
+- [x] [Next.js](https://nextjs.org/)
+- [x] [Prisma](https://www.prisma.io/)
+- [ ] [styled-components](https://styled-components.com/)
+- [ ] [stitches](https://stitches.dev/)
+- [ ] [React Hook Form](https://react-hook-form.com/)
 
 ## Getting Started
 
