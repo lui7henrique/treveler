@@ -50,7 +50,7 @@ describe("/auth/register", () => {
     expect(res.statusCode).toBe(406);
     expect(res._getData()).toBe(
       JSON.stringify({
-        message: "Email must be a valid email (with @ and .domai)",
+        message: "Email must be a valid email (with @ and .domain)",
       })
     );
   });
