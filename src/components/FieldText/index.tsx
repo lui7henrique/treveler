@@ -1,3 +1,4 @@
+import { TooltipField } from "components/Tooltip";
 import {
   useState,
   forwardRef,
@@ -25,7 +26,9 @@ const BaseFieldText: ForwardRefRenderFunction<
 
   return (
     <S.Container style={error && "error"} {...containerProps}>
-      <S.Label isTyping={isTyping}>{label}</S.Label>
+      <S.Label isTyping={isTyping}>
+        {label} <TooltipField />
+      </S.Label>
 
       <S.Input
         type="text"

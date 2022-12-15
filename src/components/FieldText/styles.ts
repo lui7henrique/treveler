@@ -60,7 +60,6 @@ export const Label = styled("label", {
   position: "absolute",
 
   left: "$6",
-  pointerEvents: "none",
 
   zIndex: 2,
 });
