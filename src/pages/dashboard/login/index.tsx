@@ -1,8 +1,10 @@
 import { Button } from "components/Button";
 import { FieldText } from "components/FieldText";
-import { useCallback } from "react";
+import { useCallback, useRef, useState } from "react";
+import { FiEyeOff, FiEye } from "react-icons/fi";
 
 import { useForm } from "react-hook-form";
+import { FieldPassword } from "components/FieldPassword";
 
 type LoginForm = {
   email: string;
@@ -18,8 +20,6 @@ export default function Login() {
 
   const onSubmit = useCallback((data: LoginForm) => {
     const { email, password } = data;
-
-    console.log({ email, password });
   }, []);
 
   return (
@@ -34,30 +34,15 @@ export default function Login() {
       }}
     >
       <form onSubmit={handleSubmit(onSubmit)} style={{ width: "416px" }}>
-        <FieldText
-          {...register("email", {
-            required: {
-              value: true,
-              message: "E-mail é um campo obrigatório.",
-            },
-          })}
-          error={errors.email}
-          label="E-mail"
-        />
-        <FieldText
-          {...register("password", {
-            required: {
-              value: true,
-              message: "E-mail é um campo obrigatório.",
-            },
-          })}
-          error={errors.password}
+        <FieldText {...register("email")} error={errors.email} label="E-mail" />
+
+        <FieldPassword
+          {...register("password")}
           label="Senha"
+          error={errors.password}
         />
 
         <Button type="submit">Acessar plataforma</Button>
-
-        {/* <Button label="Oi" color="green" /> */}
       </form>
     </div>
   );
