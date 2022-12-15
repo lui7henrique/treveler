@@ -1,12 +1,16 @@
 import { useCallback, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
 
 import { FieldPassword } from "components/FieldPassword";
 import { Button } from "components/Button";
 import { FieldText } from "components/FieldText";
 
-import { loginSchema } from "./schema";
+export const loginSchema = z.object({
+  email: z.string().email("E-mail é um campo obrigatório."),
+  password: z.string().min(6, "Senha é um campo obrigatório."),
+});
 
 type LoginForm = {
   email: string;
