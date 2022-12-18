@@ -4,7 +4,7 @@ import handleRegister from "../../src/pages/api/auth/register";
 import { NextApiRequest, NextApiResponse } from "next";
 
 describe("/auth/register", () => {
-  test("Create a valid user", async () => {
+  test("should be able to create new user with name, e-mail and password", async () => {
     const body = {
       name: faker.name.fullName(),
       email: faker.internet.email(),
@@ -22,7 +22,7 @@ describe("/auth/register", () => {
 
   // |-------------------------------------------------------------------------|
 
-  test("Can't create user without fields", async () => {
+  test("should not be able to create user without any fields (name, e-mail or password)", async () => {
     const { req, res } = createMocks<NextApiRequest, NextApiResponse>({
       method: "POST",
       body: {},
@@ -34,7 +34,7 @@ describe("/auth/register", () => {
 
   // |-------------------------------------------------------------------------|
 
-  test("Can't create user with invalid e-mail", async () => {
+  test("should not be able to create user with invalid email", async () => {
     const body = {
       name: faker.name.fullName(),
       email: faker.internet.password(),
@@ -57,7 +57,7 @@ describe("/auth/register", () => {
 
   // |-------------------------------------------------------------------------|
 
-  test("Can't create user with e-mail already exists", async () => {
+  test("should not be able to create a user when an email has already been used", async () => {
     const body = {
       name: faker.name.fullName(),
       email: faker.internet.email(),

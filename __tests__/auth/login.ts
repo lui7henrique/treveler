@@ -7,7 +7,7 @@ import handleLogin from "../../src/pages/api/auth/login";
 import { NextApiRequest, NextApiResponse } from "next";
 
 describe("/auth/register", () => {
-  test("Login with valid user", async () => {
+  test("should be able to register and login with user", async () => {
     const user = {
       name: faker.name.fullName(),
       email: faker.internet.email(),
@@ -42,7 +42,7 @@ describe("/auth/register", () => {
 
   // |-------------------------------------------------------------------------|
 
-  test("Can't login with invalid credentials", async () => {
+  test("should not be able login with invalid credentials", async () => {
     const user = {
       name: faker.name.fullName(),
       email: faker.internet.email(),
