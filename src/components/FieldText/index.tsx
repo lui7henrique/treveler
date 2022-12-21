@@ -1,10 +1,11 @@
-import { TooltipField } from "components/Tooltip";
+import { Tooltip } from "components/Tooltip";
 import {
   useState,
   forwardRef,
   ForwardRefRenderFunction,
   HTMLProps,
 } from "react";
+import { MdErrorOutline } from "react-icons/md";
 import { FieldError } from "react-hook-form";
 
 import * as S from "./styles";
@@ -26,8 +27,13 @@ const BaseFieldText: ForwardRefRenderFunction<
 
   return (
     <S.Container style={error && "error"} {...containerProps}>
-      <S.Label isTyping={isTyping}>
-        {label} <TooltipField />
+      <S.Label error={!!error} isTyping={isTyping}>
+        {label}
+        {error?.message && (
+          <Tooltip content={error?.message}>
+            <MdErrorOutline />
+          </Tooltip>
+        )}
       </S.Label>
 
       <S.Input

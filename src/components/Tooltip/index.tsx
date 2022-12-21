@@ -1,13 +1,22 @@
+import { IconBox } from "components/FieldPassword";
 import { useEffect } from "react";
+
 import tippy from "tippy.js";
 import "tippy.js/dist/tippy.css";
 
-export function TooltipField() {
+interface TooltipProps {
+  content: string;
+  children: JSX.Element;
+}
+
+export function Tooltip(props: TooltipProps) {
+  const { content, children } = props;
+
   useEffect(() => {
     tippy("#myButton", {
-      content: "I'm a Tippy tooltip!",
+      content: content,
     });
   }, []);
 
-  return <button id="myButton">My Button</button>;
+  return <IconBox id="myButton">{children}</IconBox>;
 }

@@ -54,11 +54,17 @@ export const Label = styled("label", {
       true: { transform: "translateY(-70%)", fontSize: "$xs" },
       false: { transform: "translateY(-0%)" },
     },
+    error: {
+      true: {
+        color: "$red",
+      },
+    },
   },
 
+  display: "flex",
   transition: "all 0.2s ease-in-out",
   position: "absolute",
-
+  alignItems: "center",
   left: "$6",
 
   zIndex: 2,
