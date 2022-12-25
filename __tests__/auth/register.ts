@@ -1,7 +1,8 @@
 import { createMocks } from "node-mocks-http";
 import { faker } from "@faker-js/faker";
-import handleRegister from "../../src/pages/api/auth/register";
 import { NextApiRequest, NextApiResponse } from "next";
+
+import register from "../../src/pages/api/auth/register";
 
 describe("/auth/register", () => {
   test("should be able to create new user with name, e-mail and password", async () => {
@@ -16,7 +17,7 @@ describe("/auth/register", () => {
       body,
     });
 
-    await handleRegister(req, res);
+    await register(req, res);
     expect(res.statusCode).toBe(201);
   });
 
@@ -28,7 +29,7 @@ describe("/auth/register", () => {
       body: {},
     });
 
-    await handleRegister(req, res);
+    await register(req, res);
     expect(res.statusCode).toBe(406);
   });
 
@@ -46,8 +47,9 @@ describe("/auth/register", () => {
       body,
     });
 
-    await handleRegister(req, res);
+    await register(req, res);
     expect(res.statusCode).toBe(406);
+
     expect(res._getData()).toBe(
       JSON.stringify({
         message: "Email must be a valid email (with @ and .domain)",
@@ -69,7 +71,7 @@ describe("/auth/register", () => {
       body,
     });
 
-    await handleRegister(req, res);
+    await register(req, res);
     expect(res.statusCode).toBe(201);
 
     const { req: repeatedReq, res: repeteadRes } = createMocks<
@@ -80,7 +82,7 @@ describe("/auth/register", () => {
       body,
     });
 
-    await handleRegister(repeatedReq, repeteadRes);
+    await register(repeatedReq, repeteadRes);
     expect(repeteadRes.statusCode).toBe(403);
   });
 });

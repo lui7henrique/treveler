@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { Prisma } from "@prisma/client";
+import { Prisma, PrismaClient } from "@prisma/client";
 
-import prisma from "../../../../lib/prisma";
+import prismaClient from "../../../../lib/prisma/client";
 import { isValidEmail } from "../../../../utils/email/valid";
 import { hash } from "../../../../utils/password/hash";
 
@@ -11,7 +11,8 @@ type ResponseData = {
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<ResponseData>
+  res: NextApiResponse<ResponseData>,
+  prisma: PrismaClient = prismaClient
 ) {
   if (req.method !== "POST") {
     return res.status(405).json({ message: "Method not allowed" });
@@ -38,7 +39,7 @@ export default async function handler(
   }
 
   try {
-    const user = await prisma.user.create({
+    await prisma.user.create({
       data: {
         name,
         email,
