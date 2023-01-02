@@ -11,8 +11,8 @@ describe("/auth/register", () => {
     const { req, res } = createMocks<NextApiRequest, NextApiResponse>({
       method: "POST",
       body: {
-        email: "henrique@gmail.com",
-        password: "henrique123",
+        email: "user@email.com",
+        password: "password123",
       },
     });
 

@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "test": "npx prisma db push --force-reset && npx prisma db seed && jest"
+    "test:seed": "npx prisma db push --force-reset && npx prisma db seed && jest",
+    "test": "jest"
   },
   "dependencies": {
     "@prisma/client": "^4.7.1",
