@@ -10,11 +10,12 @@ async function main() {
       password: hash("henrique123"),
     },
   });
-  const ademir = await prisma.user.create({
+  const admin = await prisma.user.create({
     data: {
-      name: "Ademir",
-      email: "ademir@gmail.com",
-      password: hash("ademir"),
+      name: "admin",
+      email: "admin@gmail.com",
+      password: hash("top-secret"),
+      isAdmin: true,
     },
   });
 }

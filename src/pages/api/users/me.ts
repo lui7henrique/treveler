@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-import prisma from "lib/prisma";
+import prisma from "lib/prisma/client";
 import { User } from "@prisma/client";
 import { decode } from "utils/token";
 import { TokenExpiredError } from "jsonwebtoken";
